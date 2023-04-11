@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --fundo: linear-gradient(90deg, rgba(0,12,48,1) 7%, rgba(0,25,73,1) 45%);
+    --fonte:'Inter', sans-serif;
+    --cor-principal: #FCFCFC;
+    --azul:#1E67D1;
+    --amarelo:#FFDE59;
+}
+
+body{
+    width: auto;
+    font-family: var(--fonte);
+    color:var(--cor-principal);
+    background:var(--fundo);
+}
+
+.desenho-do-T{
+    display:none;
+}
+
+.parte-superior-T{
+    width: 1300px;
+    height: 65px;
+    border: 2px dotted var(--amarelo);
+    border-bottom:none;
+    position:absolute;
+    top:20px;
+    left:31px;
+}
+
+.parte-esquerda-inferior-T{
+    width: 534px;
+    border-bottom: 2px dotted var(--amarelo);
+    position:absolute;
+    top:88px;
+    left:31px;
+}
+
+.parte-direita-inferior-T{
+    width: 572px;
+    border-bottom: 2px dotted var(--amarelo);
+    position:absolute;
+    top:88px;
+    right:31px;
+}
+
+.parte-inferior-T {
+    width: 190px;
+    height: 415px;
+    border: 2px dotted var(--amarelo);
+    border-top: none;
+    position:absolute;
+    top:88px;
+    left:567px;
+}
+
+.container{
+    padding:2rem;
+    display:flex;
+    justify-content: space-around;
+    gap:10px;
+}
+
+.card{
+    border: 2px solid var(--azul);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.titulo-card{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--azul);
+    padding:0.8rem;
+    font-size: 14px;
+}
+
+.lista-card{
+    padding:1rem;
+    font-size: 12px;
+}
+
+.item-card{
+    list-style: none;
+    font-weight: 300;
+}
+
+.legenda{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    align-items: center;
+
+}
+
+.atualizacao-data{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.informacoes-legenda{
+    border: 2px solid var(--azul);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.titulo-legenda{
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    background-color: var(--azul);
+    padding:0.5rem;
+    text-align: center;
+}
+
+.item-legenda{
+    font-size: 12px;
+    list-style: none;
+    padding: 0 1rem;
+    font-weight: 300;
+}
+
+.ultimo-item{
+    padding-bottom:1rem;
+}
